@@ -52,6 +52,17 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_escape {
+            bindings = <&kp ESC>;
+            key-positions = <19 20>;
+            timeout-ms = <90>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
